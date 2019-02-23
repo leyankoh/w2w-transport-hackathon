@@ -28,4 +28,8 @@ class UserForm(forms.Form):
     email = forms.EmailField()
     phone_number = forms.IntegerField()
     flight_number = forms.CharField(max_length=10)
-    date = forms.DateTimeField
+    date = forms.DateTimeField()
+
+
+class PreferenceForm(forms.Form):
+    

@@ -1,0 +1,13 @@
+{% extends "wings2wheels/header.html" %}
+
+{%  block content %}
+    <form method="POST">
+        {%  csrf_token %}
+        {{ form.as_p }}
+        <br><br>
+        <button class='btn' type="submit">Register</button>
+    </form>
+
+    If you have an account, <a href="/login">login here</a> instead.
+
+{% endblock %}
